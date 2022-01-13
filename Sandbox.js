@@ -11,7 +11,7 @@ async function startProgram() {
 		for (var _i1 = 0; _i1 < 3; _i1++) {
 			await Sound.Animal.Donkey.play(true);
 			setMainLed({ r: 0, g: 255, b: 0});
-			await roll((getHeading() + 300), 50, 2);
+			await roll((getHeading() + 80), 50, 2);
 			setMainLed({ r: 255, g: 0, b: 0});
 			await delay (1);
 		
