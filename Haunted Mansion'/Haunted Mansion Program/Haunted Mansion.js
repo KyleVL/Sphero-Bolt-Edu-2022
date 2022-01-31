@@ -18,6 +18,10 @@ async function startProgram() {
 	await roll((getHeading() + 45), 40, 2);
 	await roll((getHeading() + 270), 24, 2);
 	setMainLed ({ r: 255, g: 0, b: 0});
+	//Chalenge 4
+	await roll((getHeading() + 270), 45, 2);
+	await Sound.Animal.Donkey.play(true);
+	await roll((getHeading() + 90), 35, 2);
 }
 	
 
