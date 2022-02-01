@@ -15,13 +15,20 @@ async function startProgram() {
 	await Sound.Animal.SeaLion.play(true);
 	await roll((getHeading() + 90), 43, 2);
 	//Chalenge 3
-	await roll((getHeading() + 45), 40, 2);
+	await roll((getHeading() + 45), 39, 2);
 	await roll((getHeading() + 270), 24, 2);
 	setMainLed ({ r: 255, g: 0, b: 0});
 	//Chalenge 4
 	await roll((getHeading() + 270), 45, 2);
 	await Sound.Animal.Donkey.play(true);
-	await roll((getHeading() + 90), 35, 2);
+	await roll((getHeading() + 90), 37, 2);
+	//Chalenge 5
+	await roll((getHeading() + 315), 20, 2);
+	setMainLed ({ r: 0, g: 255, b: 0});
+	//Chalenge 6
+	
+	
 }
 	
+
 
