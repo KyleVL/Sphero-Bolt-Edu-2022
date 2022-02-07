@@ -1,7 +1,7 @@
 /*
 Programer: Kyle VanLandegent
 Team Member: Nolan Loukes
-Program: Maze
+Program: Spooky Maze
 */
 async function startProgram() {
 	// Write code here
@@ -23,16 +23,20 @@ async function startProgram() {
 	await Sound.Animal.Donkey.play(true);
 	await roll((getHeading() + 90), 43, 2);
 	//Chalenge 5
-	await roll((getHeading() + 315), 23, 2);
+	await roll((getHeading() + 315), 20, 2);
 	setMainLed ({ r: 0, g: 255, b: 0});
 	//Chalenge 6
-	await roll((getHeading() + 	270), 30, 2);
-	await roll((getHeading() + 	310), 40, 2);
+	await roll((getHeading() + 	270), 35, 2);
+	await roll((getHeading() + 	310), 32, 2);
 	await Sound.Animal.Sheep.play(true);
 	//Chalenge 7
-	await roll((getHeading() + 	60), 25, 2);
+	await roll((getHeading() + 	65), 25, 2);
 	setMainLed ({ r: 255, g: 0, b: 255});
-	await roll((getHeading() + 	0), 30, 2);
-	await speak('End');
+	await roll((getHeading() + 	0), 32, 2);
+	await scrollMatrixText ('END', { r: 255, g: 0, b: 255},90,false);
+	await roll((getHeading() + 	0), 1, 2);
 }
+	
+
+
 	
